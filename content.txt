@@ -1,0 +1,26 @@
+<h2> Skills </h2>  
+[background of parallax tech logos and a unicorn]
+<ul>
+<li> Software: Atom, Visual Studio Code, Microsoft Office, Dreamweaver, Photoshop, After Effects, Premiere Pro </li>
+<li> Languages and Frameworks: HTML, CSS, JavaScript,  Ruby, Ruby on Rails, Node.js/Express.js, Bootstrap </li>
+<li> Other Technical: Git, Github, Bash CLI, PostgresSQL, Heroku, WordPress, MacOSX/Windows </li>
+</ul>
+
+<p> This very page is made with Gatsby, React and React-Spring! </p>
+
+<h2> Experience </h2> 
+
+<h2> Education </h2>  
+
+<h2> Hobbies </h2> 
+
+
+<h2> Contact </h2> 
+<p> I am located in Ladysmith on Vancouver Island, British Columbia, Canada but can work anywhere through the power of the internet! I am also close to Vancouver, BC, if necessary </p>
+
+[contact form, social media]
+
+bottom navbar/footer 
+about | portfolio site | blog 
+copyright info 
+

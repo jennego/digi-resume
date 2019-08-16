@@ -1,3 +1,6 @@
+Digital resume with react-spring and Gatsby. First time using both.  
+
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
