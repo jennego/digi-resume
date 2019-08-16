@@ -6,7 +6,7 @@
 <li> Other Technical: Git, Github, Bash CLI, PostgresSQL, Heroku, WordPress, MacOSX/Windows </li>
 </ul>
 
-<p> This very page is made with Gatsby, React and React-Spring! </p>
+<p> This very page is made with Gatsby, React and React-Spring! <a href="https://github.com/jennego/digi-resume"> See code for this site on Github. </a></p>
 
 <h2> Experience </h2> 
 
