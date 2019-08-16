@@ -1,26 +1,36 @@
 import React, {Component} from 'react'
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
+import bg1 from '../images/sq.jpg'
 
 // Little helpers ...
-const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
+// const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
 
 
 class Plx extends Component {
     render() {
         return (
-            <div className='plx'>
+
+            
         
             <Parallax ref={ref => (this.parallax = ref)} pages={3}>
-           
-                <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#805E73' }} />
-                <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: '#87BCDE' }} > 
-                     Hi 
+                <ParallaxLayer offset={0} speed={0} style={{ backgroundImage: `url(${bg1})`, backgroundSize:'cover'}}>
+                
+                </ParallaxLayer>
+                <ParallaxLayer offset={1} speed={-0.05} style={{ backgroundColor: '#805E73' }} />
+                <ParallaxLayer offset={2} speed={0} style={{ backgroundColor: '#87BCDE' }} > 
+                    <div > <p className="content-center"> hi biob </p></div> 
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={0} speed={0} factor={3} style={{ backgroundImage: url('stars', true), backgroundSize: 'cover' }} />
+                <ParallaxLayer offset={0.3} speed={0.5}> 
+                    <div style={{ textAlign: 'center' }}>
+                        <h1 className="title"> Jennifer Chow </h1>
+                        <p className="statement"> I am a design-oriented developer making interactive experiences come to life.   </p>
+                    </div>
+                </ParallaxLayer>
 
-                <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none' }}>
-                    <img src={url('satellite4')} style={{ width: '15%', marginLeft: '70%' }} />
+
+                {/* <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none' }}>
+                    <img src={url('satellite4')} style={{ width: '15%', marginLeft: '10%' }} />
                 </ParallaxLayer>
 
                 <ParallaxLayer offset={1} speed={0.8} style={{ opacity: 0.1 }}>
@@ -51,7 +61,7 @@ class Plx extends Component {
 
                 <ParallaxLayer offset={2.5} speed={-0.4} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' }}>
                     <img src={url('earth')} style={{ width: '60%' }} />
-                </ParallaxLayer>
+                </ParallaxLayer> 
 
                 <ParallaxLayer
                     offset={2}
@@ -85,10 +95,8 @@ class Plx extends Component {
                     style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
                     onClick={() => this.parallax.scrollTo(0)}>
                     <img src={url('clients-main')} style={{ width: '40%' }} />
-                </ParallaxLayer>
+                </ParallaxLayer>  */}
         </Parallax>
-        </div>
-     
         )}
     }
 

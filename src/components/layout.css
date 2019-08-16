@@ -624,3 +624,17 @@ pre tt:after {
 .plx {
   display:block;
 }
+
+body {
+  background: yellow;
+}
+
+.content-center, p.content-center  {
+  text-align: center;
+  margin-top: 6rem;
+  padding-left:1rem;
+}
+
+h1.title {
+  padding:20px;
+}
