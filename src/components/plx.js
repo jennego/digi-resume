@@ -12,14 +12,15 @@ class Plx extends Component {
 
             
         
-            <Parallax ref={ref => (this.parallax = ref)} pages={3}>
+            <Parallax ref={ref => (this.parallax = ref)} pages={5}>
                 <ParallaxLayer offset={0} speed={0} style={{ backgroundImage: `url(${bg1})`, backgroundSize:'cover'}}>
                 
                 </ParallaxLayer>
-                <ParallaxLayer offset={1} speed={-0.05} style={{ backgroundColor: '#805E73' }} />
-                <ParallaxLayer offset={2} speed={0} style={{ backgroundColor: '#87BCDE' }} > 
-                    <div > <p className="content-center"> hi biob </p></div> 
+                <ParallaxLayer offset={1} factor={1.5} speed={0} style={{ backgroundColor: '#fff' }} />
+                <ParallaxLayer offset={2} factor={1.5} speed={0} style={{ backgroundColor: '#d47508' }} />
+                <ParallaxLayer offset={3} speed={0} style={{ backgroundColor: '#87BCDE' }} > 
                 </ParallaxLayer>
+                <ParallaxLayer offset={4} factor={1.5} speed={0} style={{ backgroundColor: '#9f60f7' }} />
 
                 <ParallaxLayer offset={0.3} speed={0.5}> 
                     <div style={{ textAlign: 'center' }}>
@@ -27,6 +28,50 @@ class Plx extends Component {
                         <p className="statement"> I am a design-oriented developer making interactive experiences come to life.   </p>
                     </div>
                 </ParallaxLayer>
+
+                <ParallaxLayer offset={1} speed={0.3}>
+                    <div style={{ textAlign: 'center' }}>
+                        <h1 className="title"> Skills </h1>
+                        <p className="statement"> I have skillz   </p>
+                        <ul>
+                        <li> Software: Atom, Visual Studio Code, Microsoft Office, Dreamweaver, Photoshop, After Effects, Premiere Pro </li>
+                        <li> Languages and Frameworks: HTML, CSS, JavaScript,  Ruby, Ruby on Rails, Node.js/Express.js, Bootstrap </li>
+                        <li> Other Technical: Git, Github, Bash CLI, PostgresSQL, Heroku, WordPress, MacOSX/Windows </li>
+                        </ul>
+
+                    <p> This very page is made with Gatsby, React and React-Spring! <a href="https://github.com/jennego/digi-resume"> See code for this site on Github.</a></p>
+                    </div>
+
+                </ParallaxLayer>
+
+
+
+
+                <ParallaxLayer offset={2} speed={0.3}>
+                    <div style={{ textAlign: 'center' }}>
+                        <h1 className="title"> Education </h1>
+                        <p className="statement"> I have education!   </p>
+                    </div>
+                </ParallaxLayer>
+
+                <ParallaxLayer offset={3} speed={0.3}>
+                    <div style={{ textAlign: 'center' }}>
+                        <h1 className="title"> Hobbies </h1>
+                        <p className="statement"> I am a horse!  </p>
+                    </div>
+                </ParallaxLayer>
+
+
+                <ParallaxLayer offset={4} speed={0.3}>
+                    <div style={{ textAlign: 'center' }}>
+                        <h1 className="title"> Contact </h1>
+                        <p className="statement"> I am a horse!  </p>
+                    </div>
+                </ParallaxLayer>
+
+
+                
+
 
 
                 {/* <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none' }}>
