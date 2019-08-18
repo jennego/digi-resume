@@ -1,6 +1,9 @@
 import React, {Component} from 'react'
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
 import bg1 from '../images/sq.jpg'
+import HTML5 from '../images/html5-brands.svg'
+import CSS3 from '../images/css3-alt-brands.svg'
+import js from '../images/js-brands.svg'
 
 // Little helpers ...
 // const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
@@ -16,7 +19,7 @@ class Plx extends Component {
                 <ParallaxLayer offset={0} speed={0} style={{ backgroundImage: `url(${bg1})`, backgroundSize:'cover'}}>
                 
                 </ParallaxLayer>
-                <ParallaxLayer offset={1} factor={1.5} speed={0} style={{ backgroundColor: '#fff' }} />
+                <ParallaxLayer offset={1} factor={2} speed={0} style={{ backgroundColor: '#fff' }} />
                 <ParallaxLayer offset={2} factor={1.5} speed={0} style={{ backgroundColor: '#d47508' }} />
                 <ParallaxLayer offset={3} speed={0} style={{ backgroundColor: '#87BCDE' }} > 
                 </ParallaxLayer>
@@ -45,6 +48,11 @@ class Plx extends Component {
                 </ParallaxLayer>
 
 
+                <ParallaxLayer offset={1} speed={1} style={{ opacity: 0.9 }}>
+                    <img src={`${HTML5}`} style={{ display: 'block', width: '10%', marginLeft: '10%' }} />
+                    <img src={`${CSS3}`} style={{ display: 'block', width: '10%', marginLeft: '80%' }} />
+                    <img src={`${js}`} style={{ display: 'block', width: '10%', marginLeft: '40%' }} />
+                </ParallaxLayer>
 
 
                 <ParallaxLayer offset={2} speed={0.3}>
@@ -86,14 +94,10 @@ class Plx extends Component {
                 <ParallaxLayer offset={1.75} speed={0.5} style={{ opacity: 0.1 }}>
                     <img src={url('cloud')} style={{ display: 'block', width: '20%', marginLeft: '70%' }} />
                     <img src={url('cloud')} style={{ display: 'block', width: '20%', marginLeft: '40%' }} />
-                </ParallaxLayer>
+                </ParallaxLayer> */}
 
-                <ParallaxLayer offset={1} speed={0.2} style={{ opacity: 0.2 }}>
-                    <img src={url('cloud')} style={{ display: 'block', width: '10%', marginLeft: '10%' }} />
-                    <img src={url('cloud')} style={{ display: 'block', width: '20%', marginLeft: '75%' }} />
-                </ParallaxLayer>
 
-                <ParallaxLayer offset={1.6} speed={-0.1} style={{ opacity: 0.4 }}>
+                {/* <ParallaxLayer offset={1.6} speed={-0.1} style={{ opacity: 0.4 }}>
                     <img src={url('cloud')} style={{ display: 'block', width: '20%', marginLeft: '60%' }} />
                     <img src={url('cloud')} style={{ display: 'block', width: '25%', marginLeft: '30%' }} />
                     <img src={url('cloud')} style={{ display: 'block', width: '10%', marginLeft: '80%' }} />
@@ -140,8 +144,10 @@ class Plx extends Component {
                     style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
                     onClick={() => this.parallax.scrollTo(0)}>
                     <img src={url('clients-main')} style={{ width: '40%' }} />
-                </ParallaxLayer>  */}
-        </Parallax>
+                </ParallaxLayer>  
+     */}
+            </Parallax> 
+
         )}
     }
 
