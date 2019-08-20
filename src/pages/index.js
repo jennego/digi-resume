@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import 'bootstrap/dist/css/bootstrap.css';
 
 import Plx from "../components/plx"
 import Layout from "../components/layout"

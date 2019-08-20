@@ -19,20 +19,20 @@ class Plx extends Component {
                 <ParallaxLayer offset={0} speed={0} style={{ backgroundImage: `url(${bg1})`, backgroundSize:'cover'}}>
                 
                 </ParallaxLayer>
-                <ParallaxLayer offset={1} factor={2} speed={0} style={{ backgroundColor: '#fff' }} />
-                <ParallaxLayer offset={2} factor={1.5} speed={0} style={{ backgroundColor: '#d47508' }} />
+                <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#fff', opacity:'0.5' }} />
+                <ParallaxLayer offset={2}  speed={1} style={{ backgroundColor: '#d47508' }} />
                 <ParallaxLayer offset={3} speed={0} style={{ backgroundColor: '#87BCDE' }} > 
                 </ParallaxLayer>
-                <ParallaxLayer offset={4} factor={1.5} speed={0} style={{ backgroundColor: '#9f60f7' }} />
+                <ParallaxLayer offset={4} speed={1} style={{ backgroundColor: '#9f60f7' }} />
 
-                <ParallaxLayer offset={0.3} speed={0.5}> 
+                <ParallaxLayer offset={0.3} speed={0.2}> 
                     <div style={{ textAlign: 'center' }}>
                         <h1 className="title"> Jennifer Chow </h1>
                         <p className="statement"> I am a design-oriented developer making interactive experiences come to life.   </p>
                     </div>
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={1} speed={0.3}>
+                <ParallaxLayer offset={1} speed={0.2}>
                     <div style={{ textAlign: 'center' }}>
                         <h1 className="title"> Skills </h1>
                         <p className="statement"> I have skillz   </p>
@@ -48,7 +48,7 @@ class Plx extends Component {
                 </ParallaxLayer>
 
 
-                <ParallaxLayer offset={1} speed={1} style={{ opacity: 0.9 }}>
+                <ParallaxLayer offset={1} speed={1} style={{ opacity: 0.7 }}>
                     <img src={`${HTML5}`} style={{ display: 'block', width: '10%', marginLeft: '10%' }} />
                     <img src={`${CSS3}`} style={{ display: 'block', width: '10%', marginLeft: '80%' }} />
                     <img src={`${js}`} style={{ display: 'block', width: '10%', marginLeft: '40%' }} />
