@@ -19,18 +19,16 @@ class Plx extends Component {
                 <ParallaxLayer offset={0} speed={0} style={{
                     background:'linear-gradient(0deg, rgba(106,162,219,1) 0%,rgba(25,0,150,1) 55%)' }} />
                 <ParallaxLayer offset={0} speed={0}>
-                    <div class="stars"></div>
-                    <div class="twinkling"></div>
                     </ParallaxLayer> 
             
                 <ParallaxLayer offset={1} speed={0} style={{background:'linear-gradient(0deg, rgba(192, 224, 247, 1) 0%,rgba(106, 162, 219, 1) 89%)'}} />
-                <ParallaxLayer offset={2}  speed={0} style={{  }} />
-                <ParallaxLayer offset={3} speed={0} style={{  }} > 
+                <ParallaxLayer offset={2} speed={0} style={{ background:'linear-gradient(180deg, rgba(192, 224, 247, 1) 52%, rgba(247, 227, 249, 1) 82%)' }} />
+                <ParallaxLayer offset={3} speed={0} style={{ background:'linear-gradient(180deg, rgba(247,227,249,1) 13%, rgba(11,112,199,1) 43%, rgba(19,92,198,1) 70%)' }} > 
                 </ParallaxLayer>
-                <ParallaxLayer offset={4} speed={1} style={{ }} />
+                <ParallaxLayer offset={4} speed={0} style={{ background:'linear-gradient(180deg, rgba(19, 92, 198, 1) 0%, rgba(25, 0, 150, 1) 65%)' }} />
 
                 <ParallaxLayer offset={0.3} speed={0.2}> 
-                    <div style={{ textAlign: 'center' }}>
+                    <div style={{ textAlign: 'center', color: '#fff' }}>
                         <h1 className="title"> Jennifer Chow </h1>
                         <p className="statement"> I am a design-oriented developer making interactive experiences come to life.   </p>
                     </div>
