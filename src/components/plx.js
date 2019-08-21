@@ -15,15 +15,19 @@ class Plx extends Component {
 
             
         
-            <Parallax ref={ref => (this.parallax = ref)} pages={5}>
-                <ParallaxLayer offset={0} speed={0} style={{ backgroundImage: `url(${bg1})`, backgroundSize:'cover'}}>
-                
+            <Parallax ref={ref => (this.parallax = ref)} pages={5} style={{}}>
+                <ParallaxLayer offset={0} speed={0} style={{
+                    background:'linear-gradient(0deg, rgba(106,162,219,1) 0%,rgba(25,0,150,1) 55%)' }} />
+                <ParallaxLayer offset={0} speed={0}>
+                    <div class="stars"></div>
+                    <div class="twinkling"></div>
+                    </ParallaxLayer> 
+            
+                <ParallaxLayer offset={1} speed={0} style={{background:'linear-gradient(0deg, rgba(192, 224, 247, 1) 0%,rgba(106, 162, 219, 1) 89%)'}} />
+                <ParallaxLayer offset={2}  speed={0} style={{  }} />
+                <ParallaxLayer offset={3} speed={0} style={{  }} > 
                 </ParallaxLayer>
-                <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#fff', opacity:'0.5' }} />
-                <ParallaxLayer offset={2}  speed={1} style={{ backgroundColor: '#d47508' }} />
-                <ParallaxLayer offset={3} speed={0} style={{ backgroundColor: '#87BCDE' }} > 
-                </ParallaxLayer>
-                <ParallaxLayer offset={4} speed={1} style={{ backgroundColor: '#9f60f7' }} />
+                <ParallaxLayer offset={4} speed={1} style={{ }} />
 
                 <ParallaxLayer offset={0.3} speed={0.2}> 
                     <div style={{ textAlign: 'center' }}>

@@ -626,8 +626,7 @@ pre tt:after {
 }
 
 body {
-  background-image: url('..//images/stars.jpg');
-  background-size: cover;
+  background-color: linear-gradient(180deg, rgba(25,0,150,1) 0%, rgba(106,162,219,1) 29%, rgba(192,224,247,1) 47%, rgba(247,227,249,1) 58%, rgba(12,140,177,1) 70%, rgba(25,0,150,1) 99%) !important;
 }
 
 .content-center, p.content-center  {
@@ -639,4 +638,6 @@ body {
 h1.title {
   padding:20px;
 }
+
+
 

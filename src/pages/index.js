@@ -8,7 +8,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <div>
+  <div className="main">
     <SEO title="Home" />
     <Plx></Plx>
  
