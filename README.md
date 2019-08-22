@@ -1,7 +1,7 @@
 Digital resume with react-spring and Gatsby. First time using both.  
 
 Stars from https://codepen.io/gkey/pen/MPzGqN 
-
+Wave from https://codepen.io/tedmcdo/pen/PqxKXg 
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
