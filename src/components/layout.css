@@ -626,8 +626,9 @@ pre tt:after {
 }
 
 body {
-  background-color: linear-gradient(180deg, rgba(25,0,150,1) 0%, rgba(106,162,219,1) 29%, rgba(192,224,247,1) 47%, rgba(247,227,249,1) 58%, rgba(12,140,177,1) 70%, rgba(25,0,150,1) 99%) !important;
+  background: rgba(47,3,128,1);
 }
+  
 
 .content-center, p.content-center  {
   text-align: center;
@@ -639,55 +640,15 @@ h1.title {
   padding:20px;
 }
 
-.stars {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-
-#btnDebug {
-  position: fixed;
-  z-index:1;
-  top: 10px;
-  left: 10px;
-}
-
-.star {
-  fill: white;
-  animation: pulse var(--star-animation-duration, 1000ms) infinite backwards,
-    glowing var(--star-animation-glow-duration, 1000ms) infinite alternate backwards;
-  animation-delay: var(--star-animation-delay, 0);
-}
-
-#starGroup {
-  --dur: 100ms;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale3d(1, 1, 1);
-  }
-
-  30% {
-    transform: scale3d(1.2, 1.2, 1.2);
-  }
-
-  70% {
-    transform: scale3d(0.2, 0.2, 0.2);
-  }
-
-  100% {
-    transform: scale3d(1, 1, 1);
-  }
+.list-group-item {
+  background-color:rgba(255, 255, 255, 0.5) !important;
+  font-size:15px;
 }
 
 
 
 .ocean {
-  height: 10%;
+  height: 9%;
   width: 100%;
   position: absolute;
   bottom: 0;
