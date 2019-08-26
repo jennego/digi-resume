@@ -160,7 +160,7 @@ class Plx extends Component {
                     <div style={{ textAlign: 'center', color: 'white' }}>
                         <h1 className="title"> Hobbies </h1>
                         <p className="statement"> Away from the computer, I enjoy horseback riding, photography and being a weirdo.   </p>
-                        <p> My tech interests are html5, css3. JavaScript animation and interactvity.  </p>
+                        <p> My tech interests are HTML5, CSS3. JavaScript animation and interactivity.  </p>
                     </div>
                 </ParallaxLayer>
 
@@ -184,7 +184,7 @@ class Plx extends Component {
                         <div class="form-group">
                             <label class="form-check-label" for="text"> Your Message 
                             </label>
-                            <textarea class="form-control" rows="4" id="text" placeholder="I will buy you a pony and pay for all pony bills. Or a millon dollars." />
+                            <textarea class="form-control" rows="4" id="text" placeholder="I will buy you a pony and pay for all pony bills. Or a million dollars." />
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
