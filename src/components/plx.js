@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
+import './stars.scss'
 import bg1 from '../images/sq.jpg'
 import HTML5 from '../images/html5-brands.svg'
 import CSS3 from '../images/css3-alt-brands.svg'
 import js from '../images/js-brands.svg'
+import cloud1 from '../images/cloud1.png'
+import cloud2 from '../images/cloud2.png'
+
 import nep from '../images/nep.png'
 import peggy from '../images/peggysky.png'
-import stars from './stars.js'
-
+import stars from '../images/stars1.png'
+import Footer from './footer.js'
 
 
 class Plx extends Component {
@@ -22,14 +26,17 @@ class Plx extends Component {
                 <ParallaxLayer offset={0} speed={0} style={{
                     background:'linear-gradient(0deg, rgba(106,162,219,1) 0%, rgba(47,3,128,1) 55%)' }} />
                 <ParallaxLayer offset={0} speed={0}>
-                    <svg id="svgCanvas" viewbox="0 0 2000 1000" preserveaspectratio="xMinYMin slice" width="100%" height="100%">
-                        <g id="starGroup"></g>
-                    </svg>
+                    <img src={stars} /> 
                     </ParallaxLayer> 
             
                 <ParallaxLayer offset={1} speed={0} style={{background:'linear-gradient(0deg, rgba(192, 224, 247, 1) 0%,rgba(106, 162, 219, 1) 89%)'}} />
                 <ParallaxLayer offset={2} speed={0} style={{ background:'linear-gradient(180deg, rgba(192, 224, 247, 1) 52%, rgba(247, 227, 249, 1) 82%)' }} />
                 <ParallaxLayer offset={3} speed={0} factor={1.2} style={{ background:'linear-gradient(180deg, rgba(1,88,113,1) 0%, rgba(8, 83, 193, 1) 63%)' }} /> 
+                    <ParallaxLayer offset={2} speed={-0.10} style={{ opacity: 0.8 }}>
+                    <img src={`${cloud1}`} style={{ display: 'block', width: '40%', marginLeft: '80%', marginTop: '1%' }} />
+                    <img src={`${cloud1}`} style={{ display: 'block', width: '20%', marginLeft: '50%', marginBottom: '50%' }} />
+                </ParallaxLayer>
+
                 <ParallaxLayer offset={2.1} speed={0} >
                     <div class="ocean">
                         <div class="wave"></div>
@@ -38,7 +45,7 @@ class Plx extends Component {
                 </ParallaxLayer>
 
 
-                <ParallaxLayer offset={4} speed={0} style={{ background:'linear-gradient(180deg, rgba(8,83,193,1) 0%, rgba(47,3,128,1) 92%)' }} />
+                <ParallaxLayer offset={4} speed={0} factor={1.2} style={{ background:'linear-gradient(180deg, rgba(8,83,193,1) 0%, rgba(47,3,128,1) 92%)' }} />
 
                 <ParallaxLayer offset={0.3} speed={0.2}> 
                     <div style={{ textAlign: 'center', color: '#fff' }}>
@@ -52,10 +59,16 @@ class Plx extends Component {
                     <img src={`${nep}`} style={{ display: 'block', width: '20%', marginLeft: '10%', marginTop: '8%' }} />
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={1} speed={1} style={{ opacity: 0.7 }}>
+                <ParallaxLayer offset={1} speed={1} style={{ opacity: 0.4 }}>
                     <img src={`${HTML5}`} style={{ display: 'block', width: '10%', marginLeft: '10%' }} />
                     <img src={`${CSS3}`} style={{ display: 'block', width: '10%', marginLeft: '80%' }} />
                     <img src={`${js}`} style={{ display: 'block', width: '10%', marginLeft: '40%' }} />
+                </ParallaxLayer>
+
+                <ParallaxLayer offset={1} speed={1.2} style={{ opacity: 0.4 }}>
+                    <img src={`${cloud1}`} style={{ display: 'block', width: '30%', marginLeft: '10%' }} />
+                    <img src={`${cloud2}`} style={{ display: 'block', width: '30%', marginLeft: '80%' }} />
+                    <img src={`${cloud1}`} style={{ display: 'block', width: '30%', marginLeft: '40%' }} />
                 </ParallaxLayer>
                 
 
@@ -64,7 +77,7 @@ class Plx extends Component {
                         <h1 className="title"> Skills </h1>
     
                         
-                        <ul class="list-group col-3">
+                        <ul class="list-group col-3" style={{textAlign: 'left'}}>
                             <li class="list-group-item"> <h4> Languages / Frameworks </h4> </li>
                             <li class="list-group-item">HTML/CSS</li>
                             <li class="list-group-item">JavaScript</li>
@@ -104,6 +117,13 @@ class Plx extends Component {
                     </ul>
                 </ParallaxLayer> 
 
+                <ParallaxLayer offset={1} speed={2} style={{ opacity: 0.8 }}>
+                    <img src={`${cloud1}`} style={{ display: 'block', width: '20%', marginLeft: '50%', marginTop: '1%' }} />
+                    <img src={`${cloud2}`} style={{ display: 'block', width: '10%', marginLeft: '80%' }} />
+                    <img src={`${cloud1}`} style={{ display: 'block', width: '20%', marginLeft: '20%' }} />
+                </ParallaxLayer>
+
+
                 <ParallaxLayer offset={2} speed={0.8} style={{ opacity: 1.0 }}>
                     <img src={`${peggy}`} style={{ display: 'block', width: '20%', marginLeft: '70%' }} />
                 </ParallaxLayer> 
@@ -111,32 +131,55 @@ class Plx extends Component {
 
 
 
+
                 <ParallaxLayer offset={2} speed={0.3}>
                     <div style={{ textAlign: 'center' }}>
                         <h1 className="title"> Education </h1>
-                        <h3> CodeCore Bootcamp </h3>
-                        <h3> Simon Fraser University </h3> 
+                        <h4> Full-Stack Web Development Certificate  </h4>
+                          <h4>  CodeCore Bootcamp | 2017 </h4>
+                        <p> 12 week, 60 hours/week, full-stack web development bootcamp. </p>
+                        <h4> Bachelor of Arts </h4> 
+                        <h4> Simon Fraser University | 2011-2013 </h4>
+                        <p> >Major in English, Minor in History </p>
                     </div>
                 </ParallaxLayer>
 
                 <ParallaxLayer offset={3} speed={0.3}>
-                    <div style={{ textAlign: 'center' }}>
+                    <div style={{ textAlign: 'center', color: 'white' }}>
                         <h1 className="title"> Hobbies </h1>
                         <p className="statement"> Away from the computer, I enjoy horseback riding, photography and being a weirdo.   </p>
+                        <p> My tech interests are html5, css3. JavaScript animation and interactvity.  </p>
                     </div>
                 </ParallaxLayer>
 
 
-                <ParallaxLayer offset={4} speed={0.3}>
-                    <div style={{ textAlign: 'center' }}>
+                <ParallaxLayer offset={3.9} speed={0.3}>
+                    <div style={{ textAlign: 'center', color: 'white' }}>
                         <h1 className="title"> Contact </h1>
-                        <p className="statement"> Contact form </p>
+                        <form class="col-5 mx-auto" action="https://formspree.io/jennego@gmail.com" method="POST">
+
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+            
+                        </div>
+                        <div class="form-group">
+                            <label for="name"> Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Name" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-check-label" for="text"> Your Message 
+                            </label>
+                            <textarea class="form-control" rows="4" id="text" />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
                     </div>
                 </ParallaxLayer>
 
 
                 
-
+        <Footer></Footer>
         </Parallax> 
 
         )}

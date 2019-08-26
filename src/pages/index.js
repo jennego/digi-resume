@@ -11,7 +11,6 @@ const IndexPage = () => (
   <div className="main">
     <SEO title="Home" />
     <Plx></Plx>
- 
   </div>
 )
 
