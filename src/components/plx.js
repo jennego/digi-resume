@@ -7,6 +7,12 @@ import CSS3 from '../images/css3-alt-brands.svg'
 import js from '../images/js-brands.svg'
 import cloud1 from '../images/cloud1.png'
 import cloud2 from '../images/cloud2.png'
+import bubble from '../images/bubble.png'
+import orca from '../images/orca.png'
+
+import fon from '../images/fon.png'
+import quest from '../images/quest.png'
+import horsee from '../images/horsee.png'
 
 import nep from '../images/nep.png'
 import peggy from '../images/peggysky.png'
@@ -22,7 +28,7 @@ class Plx extends Component {
         
         return (
 
-            <Parallax ref={ref => (this.parallax = ref)} pages={5.2} >
+            <Parallax ref={ref => (this.parallax = ref)} pages={5.3} >
                 <ParallaxLayer offset={0} speed={0} style={{
                     background:'linear-gradient(0deg, rgba(106,162,219,1) 0%, rgba(47,3,128,1) 55%)' }} />
                 <ParallaxLayer offset={0} speed={0}>
@@ -70,15 +76,25 @@ class Plx extends Component {
                     <img src={`${cloud2}`} style={{ display: 'block', width: '30%', marginLeft: '80%' }} />
                     <img src={`${cloud1}`} style={{ display: 'block', width: '30%', marginLeft: '40%' }} />
                 </ParallaxLayer>
+
+            
                 
 
                 <ParallaxLayer offset={1} speed={0.2}>
                     <div style={{ textAlign: 'center' }}>
                         <h1 className="title"> Skills </h1>
+
+                        <div className="mobile">
+
+<p> <strong> Software: </strong> Atom, Visual Studio Code, Microsoft Office, Dreamweaver, Photoshop, After Effects, Premiere Pro, Final Cut Pro 7 </p>
+ <p> <strong> Languages and Frameworks: </strong>  HTML, CSS, JavaScript,  Ruby, Ruby on Rails, Node, js/Express.js, Bootstrap </p>
+ <p> <strong> Other Technical: </strong> Git, Github, Bash CLI, PostgresSQL, Heroku, WordPress, MacOSX/Windows </p> 
+
+                        </div>
                         
     
                         
-                        <ul class="list-group col-3" style={{textAlign: 'left'}}>
+                        <ul class="list-group col-3 skills" style={{textAlign: 'left'}}>
                             <li class="list-group-item"> <h4> Languages / Frameworks </h4> </li>
                             <li class="list-group-item">HTML/CSS</li>
                             <li class="list-group-item">JavaScript</li>
@@ -97,7 +113,7 @@ class Plx extends Component {
 
                 <ParallaxLayer offset={1} speed={0.3} style={{ opacity: 1.0 }}>
 
-                    <ul class="list-group col-3 offset-md-4" style={{marginTop: '6rem'}}>
+                    <ul class="list-group col-3 offset-md-4 skills" style={{marginTop: '6rem'}}>
                         <li class="list-group-item"> <h4> Software </h4> </li>
                         <li class="list-group-item">Atom, Visual Studio Code etc</li>
                         <li class="list-group-item">Microsoft Office</li>
@@ -108,7 +124,7 @@ class Plx extends Component {
 
                 <ParallaxLayer offset={1} speed={0.4} style={{ opacity: 1.0 }}>
 
-                    <ul class="list-group col-3 offset-md-8" style={{ marginTop: '6rem' }}>
+                    <ul class="list-group col-3 offset-md-8 skills" style={{ marginTop: '6rem' }}>
                         <li class="list-group-item"> <h4>Other Technical </h4> </li>
                         <li class="list-group-item">Git / Github</li>
                         <li class="list-group-item">Bash CLI</li>
@@ -132,6 +148,26 @@ class Plx extends Component {
                 </ParallaxLayer> 
 
 
+                <ParallaxLayer offset={3} speed={1.2} style={{ opacity: 0.5 }}>
+                    <img src={`${bubble}`} style={{ display: 'block', width: '5%', marginLeft: '10%' }} />
+                    <img src={`${bubble}`} style={{ display: 'block', width: '9%', marginLeft: '80%' }} />
+                    <img src={`${bubble}`} style={{ display: 'block', width: '4%', marginLeft: '40%' }} />
+                </ParallaxLayer>
+                <ParallaxLayer offset={3.9} speed={1.2} style={{ opacity: 0.5 }}>
+                    <img src={`${bubble}`} style={{ display: 'block', width: '5%', marginLeft: '20%' }} />
+                    <img src={`${bubble}`} style={{ display: 'block', width: '9%', marginLeft: '40%' }} />
+                    <img src={`${bubble}`} style={{ display: 'block', width: '4%', marginLeft: '80%' }} />
+                </ParallaxLayer>
+                <ParallaxLayer offset={4} speed={1.2} style={{ opacity: 0.5 }}>
+                    <img src={`${bubble}`} style={{ display: 'block', width: '11%', marginLeft: '10%'}} />
+                    <img src={`${bubble}`} style={{ display: 'block', width: '9%', marginLeft: '80%' }} />
+                    <img src={`${bubble}`} style={{ display: 'block', width: '4%', marginLeft: '40%' }} />
+                </ParallaxLayer>
+
+                <ParallaxLayer offset={3.3} speed={0.6} style={{ opacity: 1 }}>
+                    <img src={`${orca}`} style={{ display: 'block', width: '50%', marginLeft: '70%' }} />
+                </ParallaxLayer>
+
 
 
 
@@ -150,13 +186,36 @@ class Plx extends Component {
                 <ParallaxLayer offset={3.0} speed={0.3}>
                     <div style={{ textAlign: 'center', color: 'white' }}>
                         <h1 className="title"> Portfolio</h1>
-                       
+
+                    <div className="row container portfolio mx-auto">
+                        <div className="col-md-4 work">
+                                <a href="http://fonmissioncontrol.herokuapp.com" target="_blank">
+                                <img src={`${fon}`} alt="Force of Nature" className="img-responsive" />
+                                    <h3>Force of Nature Volunteer App</h3>
+                                    <p>Web Apps, Ruby on Rails, Team</p>
+							</a>
+						</div>
+                            <div className="col-md-4 work">
+                                <a href="https://horsey-diary.herokuapp.com" target="_blank">
+                                    <img src={`${horsee}`} alt="equestrian diary app" className="img-responsive" />
+                                        <h3>Horsee</h3>
+                                        <p>Web Apps, Ruby on Rails</p>
+							</a>
+						</div>
+                                <div class="col-md-4 work">
+                                <a href="http://www.questoutreach.org/" target="_blank">
+                                    <img src={`${quest}`} alt="Wordpress site" className="img-responsive" />
+                                            <h3>Quest Food Exchange</h3>
+                                            <p>Websites, WordPress, Theming</p>
+							</a>
+						</div>
+                        </div>
 
                     </div>
                 </ParallaxLayer>
     
 
-                <ParallaxLayer offset={3.6} speed={0.3}>
+                <ParallaxLayer offset={3.7} speed={0.3}>
                     <div style={{ textAlign: 'center', color: 'white' }}>
                         <h1 className="title"> Hobbies </h1>
                         <p className="statement"> Away from the computer, I enjoy horseback riding, photography and being a weirdo.   </p>
