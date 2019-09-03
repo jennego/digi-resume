@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto+Slab:700&display=swap');
+
 @media (min-width: 750px) { 
   .skills {
     display: flex;
@@ -14,6 +16,14 @@
   .mobile {
     display: block;
   }
+}
+
+h1,h2,h3,h4,h5,h6,h7 {
+  font-family: 'Roboto Slab', serif !important;
+}
+
+body, p, html {
+ font-family: 'Reem Kufi', sans-serif;
 }
 
 
@@ -757,4 +767,49 @@ h1.title {
 
 .work a:hover img {
   opacity: 0.7;
+}
+
+.cloud-right {
+  animation: 30s cloud-right infinite alternate;
+}
+
+.cloud-30 {
+  animation: 35s cloud-right-30 infinite alternate;
+}
+
+.cloud {
+  animation: 30s cloud-right infinite alternate;
+}
+.cloud-left {
+  animation: 20s cloud-left infinite alternate;
+}
+
+.cloud-left-90 {
+  animation: 30s cloud-left-90 infinite alternate;
+}
+
+.cloud-left-40 {
+  animation: 50s cloud-left-40 infinite alternate;
+}
+
+
+@keyframes cloud-right {
+  0% {margin-left:0%}
+  100% {margin-left: 100%}
+}
+@keyframes cloud-left {
+  0% {margin-left:75%}
+  100% {margin-left: 0}
+}
+@keyframes cloud-left-90 {
+  0% {margin-left:90%}
+  100% {margin-left: 0%}
+}
+@keyframes cloud-left-40 {
+  0% {margin-left:40%}
+  100% {margin-left: 0%}
+}
+@keyframes cloud-right-30 {
+  0% {margin-left:30%}
+  100% {margin-left: 110%}
 }

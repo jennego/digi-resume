@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
-import './stars.scss'
-import bg1 from '../images/sq.jpg'
+import { Spring, config } from 'react-spring/renderprops'
+
+
 import HTML5 from '../images/html5-brands.svg'
 import CSS3 from '../images/css3-alt-brands.svg'
 import js from '../images/js-brands.svg'
@@ -20,15 +21,17 @@ import stars from '../images/stars1.png'
 import Footer from './footer.js'
 
 
+
 class Plx extends Component {
+
 
     render() {
 
         
-        
         return (
 
             <Parallax ref={ref => (this.parallax = ref)} pages={5.3} >
+                
                 <ParallaxLayer offset={0} speed={0} style={{
                     background:'linear-gradient(0deg, rgba(106,162,219,1) 0%, rgba(47,3,128,1) 55%)' }} />
                 <ParallaxLayer offset={0} speed={0}>
@@ -38,6 +41,7 @@ class Plx extends Component {
                 <ParallaxLayer offset={1} speed={0} style={{background:'linear-gradient(0deg, rgba(192, 224, 247, 1) 0%,rgba(106, 162, 219, 1) 89%)'}} />
                 <ParallaxLayer offset={2} speed={0} style={{ background:'linear-gradient(180deg, rgba(192, 224, 247, 1) 52%, rgba(247, 227, 249, 1) 82%)' }} />
                 <ParallaxLayer offset={3} speed={0} factor={1} style={{ background:'linear-gradient(180deg, rgba(1,88,113,1) 0%, rgba(8, 83, 193, 1) 63%)' }} /> 
+                  
                     <ParallaxLayer offset={2} speed={-0.10} style={{ opacity: 0.8 }}>
                     <img src={`${cloud1}`} style={{ display: 'block', width: '40%', marginLeft: '80%', marginTop: '1%' }} />
                     <img src={`${cloud1}`} style={{ display: 'block', width: '20%', marginLeft: '50%', marginBottom: '50%' }} />
@@ -55,6 +59,7 @@ class Plx extends Component {
 
                 <ParallaxLayer offset={0.3} speed={0.2}> 
                     <div style={{ textAlign: 'center', color: '#fff' }}>
+
                         <h1 className="title"> Jennifer Chow </h1>
                         <p className="statement"> I am a design-oriented developer making interactive experiences come to life.   </p>
                     </div>
@@ -72,9 +77,9 @@ class Plx extends Component {
                 </ParallaxLayer>
 
                 <ParallaxLayer offset={1} speed={1.2} style={{ opacity: 0.4 }}>
-                    <img src={`${cloud1}`} style={{ display: 'block', width: '30%', marginLeft: '10%' }} />
-                    <img src={`${cloud2}`} style={{ display: 'block', width: '30%', marginLeft: '80%' }} />
-                    <img src={`${cloud1}`} style={{ display: 'block', width: '30%', marginLeft: '40%' }} />
+                  <img className="cloud-30" src={`${cloud1}`} style={{ display: 'block', width: '30%', marginLeft: '10%' }} />
+                    <img className="cloud-left-40" src={`${cloud2}`} style={{ display: 'block', width: '30%', marginLeft: '80%' }} />
+                    <img className="cloud-left-90" src={`${cloud1}`} style={{ display: 'block', width: '30%', marginLeft: '40%' }} />
                 </ParallaxLayer>
 
             
@@ -136,10 +141,12 @@ class Plx extends Component {
                 <ParallaxLayer offset={1.9} speed={0.2} style={{ opacity: 1.0 }}>
                 <p style={{marginTop:'20px', textAlign:'center'}}> This very page is made with Gatsby, React and React-Spring! <a href="https://github.com/jennego/digi-resume"> See code for this site on Github.</a></p>
                 </ParallaxLayer>
-                <ParallaxLayer offset={0.9} speed={1} style={{ opacity: 0.5 }}>
-                    <img src={`${cloud1}`} style={{ display: 'block', width: '20%', marginLeft: '50%', marginTop: '1%' }} />
-                    <img src={`${cloud2}`} style={{ display: 'block', width: '10%', marginLeft: '80%' }} />
-                    <img src={`${cloud1}`} style={{ display: 'block', width: '20%', marginLeft: '20%' }} />
+                <ParallaxLayer offset={0.9} speed={1} style={{ opacity: 0.6 }}>
+                 
+                        <img className="cloud-right" src={`${cloud1}`} style={{ display: 'block', width: '15%', marginLeft: '10%' }} />
+                        <img className="cloud-left" src={`${cloud2}`} style={{ display: 'block', width: '20%', marginLeft: '80%' }} />
+                        <img className="cloud-left-90" src={`${cloud1}`} style={{ display: 'block', width: '30%', marginLeft: '40%' }} />
+             
                 </ParallaxLayer>
 
 
@@ -174,11 +181,11 @@ class Plx extends Component {
                 <ParallaxLayer offset={2} speed={0.3}>
                     <div style={{ textAlign: 'center' }}>
                         <h1 className="title"> Education </h1>
-                        <h4> Full-Stack Web Development Certificate  </h4>
-                        <h5>  CodeCore Bootcamp | 2017 </h5>
+                        <h3> Full-Stack Web Development Certificate  </h3>
+                        <h4 className="school">  CodeCore Bootcamp | 2017 </h4>
                         <p> 12 week, 60 hours/week, full-stack web development bootcamp. </p>
-                        <h4> Bachelor of Arts </h4> 
-                        <h5> Simon Fraser University | 2011-2013 </h5>
+                        <h3> Bachelor of Arts </h3> 
+                        <h4 className="school"> Simon Fraser University | 2011-2013 </h4>
                         <p> Major in English, Minor in History </p>
                     </div>
                 </ParallaxLayer>
