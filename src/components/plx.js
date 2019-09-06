@@ -43,8 +43,8 @@ class Plx extends Component {
                 <ParallaxLayer offset={3} speed={0} factor={1} style={{ background:'linear-gradient(180deg, rgba(1,88,113,1) 0%, rgba(8, 83, 193, 1) 63%)' }} /> 
                   
                     <ParallaxLayer offset={2} speed={-0.10} style={{ opacity: 0.8 }}>
-                    <img src={`${cloud1}`} style={{ display: 'block', width: '40%', marginLeft: '80%', marginTop: '1%' }} />
-                    <img src={`${cloud1}`} style={{ display: 'block', width: '20%', marginLeft: '50%', marginBottom: '50%' }} />
+                    <img className="cloud-left-90" src={`${cloud1}`} style={{ display: 'block', width: '40%', marginLeft: '80%', marginTop: '1%' }} />
+                    <img className="cloud-left" src={`${cloud1}`} style={{ display: 'block', width: '20%', marginLeft: '50%', marginBottom: '50%' }} />
                 </ParallaxLayer>
 
                 <ParallaxLayer offset={2.1} speed={0} >
@@ -197,21 +197,21 @@ class Plx extends Component {
                     <div className="row container portfolio mx-auto">
                         <div className="col-md-4 work">
                                 <a href="http://fonmissioncontrol.herokuapp.com" target="_blank">
-                                <img src={`${fon}`} alt="Force of Nature" className="img-responsive" />
+                                <img src={`${fon}`} alt="Force of Nature" className="img-responsive work-img" />
                                     <h3>Force of Nature Volunteer App</h3>
                                     <p>Web Apps, Ruby on Rails, Team</p>
 							</a>
 						</div>
                             <div className="col-md-4 work">
                                 <a href="https://horsey-diary.herokuapp.com" target="_blank">
-                                    <img src={`${horsee}`} alt="equestrian diary app" className="img-responsive" />
+                                    <img src={`${horsee}`} alt="equestrian diary app" className="img-responsive work-img" />
                                         <h3>Horsee</h3>
                                         <p>Web Apps, Ruby on Rails</p>
 							</a>
 						</div>
                                 <div class="col-md-4 work">
                                 <a href="http://www.questoutreach.org/" target="_blank">
-                                    <img src={`${quest}`} alt="Wordpress site" className="img-responsive" />
+                                    <img src={`${quest}`} alt="Wordpress site" className="img-responsive work-img" />
                                             <h3>Quest Food Exchange</h3>
                                             <p>Websites, WordPress, Theming</p>
 							</a>
@@ -236,7 +236,7 @@ class Plx extends Component {
                 <ParallaxLayer offset={4} speed={0.3}>
                     <div style={{ textAlign: 'center', color: 'white' }}>
                         <h1 className="title"> Contact </h1>
-                        <form class="col-5 mx-auto" action="https://formspree.io/jennego@gmail.com" method="POST">
+                        <form class="col-md-6 mx-auto" action="https://formspree.io/jennego@gmail.com" method="POST">
 
                         <div class="form-group">
                             <label for="email">Email address</label>
@@ -248,11 +248,12 @@ class Plx extends Component {
                             <input type="text" class="form-control" id="name" placeholder="Joe Smo" />
                         </div>
                         <div class="form-group">
-                            <label class="form-check-label" for="text"> Your Message 
+                            <label class="form-check-label" for="content"> Your Message 
                             </label>
-                            <textarea class="form-control" rows="4" id="text" placeholder="I will buy you a pony and pay for all pony bills. Or a million dollars." />
+                            <textarea class="form-control" rows="4" id="text" name="content" placeholder="I will buy you a pony and pay for all pony bills. Or a million dollars." />
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
+                        <small><p>Form is processed by formspree</p> </small>
                         </form>
                     <p class="container" style={{textAlign:'left'}}> I am located in Ladysmith on Vancouver Island, British Columbia, Canada but can work anywhere through the power of the internet! I am also close to Vancouver, BC, if necessary </p>
                     

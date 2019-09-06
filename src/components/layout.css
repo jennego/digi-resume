@@ -13,6 +13,10 @@
   .list-group.col-3.skills { 
     display: none;
   }
+
+  img.work-img {
+    display: none;
+  }
   .mobile {
     display: block;
   }

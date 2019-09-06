@@ -28,7 +28,7 @@ function Footer() {
                                 <a class="nav-link" href="http://instagram.com/thejennego"> <i class="fab fa-instagram"></i> Instagram</a>
                             </li>
                         </ul>
-                        <div class="navbar-text mx-auto"> <small> Copyright. 2019. Stars and planets from <a href="http://obsidiandawn.com"> Obsidian Dawn Photoshop Brushes</a>. Wave from <a href="https://codepen.io/tedmcdo/pen/PqxKXg">Ted McDonald on CodePen</a>.  </small> </div>
+                        <div class="navbar-text mx-auto"> <small> Copyright. 2019. Stars and planets from <a href="http://obsidiandawn.com"> Obsidian Dawn Photoshop Brushes</a>. Wave from <a href="https://codepen.io/tedmcdo/pen/PqxKXg">Ted McDonald on CodePen. Orca and bubbles from pixabay. </a>.  </small> </div>
                     </div>
                 </div>
             </nav>
